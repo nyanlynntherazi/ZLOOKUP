@@ -14,7 +14,7 @@ function ZLOOKUP(value, column, index,threshold) {
   let scoreArr = accArr.map( elem => elem[1])
   if (Math.max(...scoreArr)>threshold){
     let calculatedIndex = scoreArr.indexOf(Math.max(...scoreArr))
-    return column[calculatedIndex][index]
+    return column[calculatedIndex][index-1]
   }
  }
 
