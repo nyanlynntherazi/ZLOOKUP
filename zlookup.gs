@@ -18,6 +18,8 @@ function ZLOOKUP(value, column, index,threshold) {
   }
  }
 
+// Levenshtein Distance Implementation from https://gist.github.com/andrei-m/982927/0efdf215b00e5d34c90fdc354639f87ddc3bd0a5
+
 function lev(a, b){
   a = String(a)
   b = String(b)
