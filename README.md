@@ -1,6 +1,6 @@
 # ZLOOKUP
 
-Google Sheet Fuzzy String Matching Custom Function
+Google Sheet Fuzzy String Matching Custom Function. The script use the Levenshtein distance implementation for javascript from https://gist.github.com/andrei-m/982927/0efdf215b00e5d34c90fdc354639f87ddc3bd0a5 with a little bit of modification to calculate the accuracy score instead of distance.
 
 # How to install the script
 
