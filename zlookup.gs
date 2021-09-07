@@ -6,7 +6,7 @@
  * @customfunction
  */
 
-function ZLOOKUP(value, column, index,threshold) {  
+function ZLOOKUP(value, column, index, threshold) {  
   let accArr = []
   for(i=0;i<column.length;++i){
     accArr.push([column[i][0],lev(column[i][0],value)])
@@ -15,6 +15,8 @@ function ZLOOKUP(value, column, index,threshold) {
   if (Math.max(...scoreArr)>threshold){
     let calculatedIndex = scoreArr.indexOf(Math.max(...scoreArr))
     return column[calculatedIndex][index-1]
+  } else { 
+    throw "Error: No match in column above threshold";
   }
  }
 
